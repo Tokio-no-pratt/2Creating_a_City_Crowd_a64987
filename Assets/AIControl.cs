@@ -23,6 +23,10 @@ public class AIControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		
+		if (agent.remainingDistance< 1)
+		{
+            int i = Random.Range(0, goalLocations.Length);
+            agent.SetDestination(goalLocations[i].transform.position);
+        }
 	}
 }
