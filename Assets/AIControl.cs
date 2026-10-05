@@ -29,7 +29,7 @@ public class AIControl : MonoBehaviour
 
     void ResetAgent()
     {
-        speedMult = Random.Range(0.5f, 2);
+        speedMult = Random.Range(0.1f, 1.5f);
         anim.SetFloat("speedMult", speedMult);
         agent.speed *= speedMult;
         anim.SetTrigger("isWalking");
