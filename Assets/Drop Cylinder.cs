@@ -33,7 +33,7 @@ public class DropCylinder : MonoBehaviour
                
                 foreach (GameObject agent in agents)
                 {
-                  
+                    agent.GetComponent<AIControl>().DetectNewObstacle(hitInfo.point);
                 }
             }
         }
